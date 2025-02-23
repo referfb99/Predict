@@ -1,18 +1,13 @@
 {
-  "name": "bank-predictor",
+  "name": "bank-prediction",
   "version": "1.0.0",
-  "description": "A simple Node.js API to predict bank names from account numbers",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2",
-    "node-fetch": "^2.6.7",
-    "dotenv": "^16.0.3"
-  },
-  "engines": {
-    "node": "14.x"
-  },
-  "license": "MIT"
+    "cors": "^2.8.5",
+    "node-fetch": "^2.6.7"
+  }
 }
