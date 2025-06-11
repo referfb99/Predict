@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kodular Trigger Functions</title>
+  <style>
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="notifyBtn">Notify</button>
+  <button id="typingBtn">Typing</button>
+
+  <script>
+    function notify() {
+      if (window.AppInventor) {
+        window.AppInventor.setWebViewString("notify");
+      } else {
+        console.log("notify: AppInventor not available");
+      }
+    }
+
+    function typing() {
+      if (window.AppInventor) {
+        window.AppInventor.setWebViewString("typing");
+      } else {
+        console.log("typing: AppInventor not available");
+      }
+    }
+
+    // Optional: hook buttons to those functions (can be removed if not needed)
+    document.getElementById("notifyBtn").addEventListener("click", notify);
+    document.getElementById("typingBtn").addEventListener("click", typing);
+  </script>
+
+</body>
+</html>
